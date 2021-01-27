@@ -1,0 +1,27 @@
+Weather Api key: 9bf729522efcbfd825ccfbef7c8f2410
+
+获取到的温度是K，开尔文温度，
+1）开氏度 = 摄氏度+273.15。 
+2）华氏度 = 32+ 摄氏度 × 1.8
+
+对于华氏温度，请使用"&units=imperial" 加在网址最后
+对于摄氏温度，请使用"&units=metric"
+
+1. 获取一个位置的数据（city name <--> city coord）
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+eg:
+    https://api.openweathermap.org/data/2.5/weather?q=Bristol&appid=9bf729522efcbfd825ccfbef7c8f2410
+
+2. 获取当天天气，1hour，48hour，7天，政府气象警报全部数据：
+https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+eg:
+    https://api.openweathermap.org/data/2.5/onecall?lat=51.4552&lon=-2.5967&exclude=minutely,hourly,daily,alerts&appid=9bf729522efcbfd825ccfbef7c8f2410
+
+exclude里面填：current,minutely,hourly,daily,alerts 就会排除掉这项结果
+
+3.谷歌地图搜索地点API：
+APIkey：AIzaSyCDnWaXdUf13V16gzyqjxVABUWpwu6P-hc
+
+4.获取到的weather.icon用法：
+eg： icon：“02d“
+获取png图片：http://openweathermap.org/img/wn/02d@2x.png

@@ -1,0 +1,209 @@
+
+
+.weatherPage {
+    
+    &__today {
+        z-index: 3;
+        color: white;
+    }
+
+   
+    &__today--tep {
+        top:165%;
+        // bottom: -20%;
+        left: 7%;
+        position: absolute;
+
+        
+    }
+
+    &__today--location{
+
+        position: absolute;
+        
+        top:0%;
+        left: 142%; 
+    }
+
+    &__today--icon {
+        position: absolute;
+        top:0%;
+        left:210%;
+        // background-color: antiquewhite;
+        width: 100px;
+    }
+
+    &__today--main {
+        position: absolute;
+        top:80px;
+        left:220%;
+        // width: 150px;
+        // background-color: aquamarine;
+
+        & span{
+            font-size: 30px;
+            color: white;
+        }
+    }
+
+
+    &__today{
+
+        z-index: 3;
+        padding: 5px;
+        margin: 5px;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // background-color: rgba(255,255,255,0.8);
+            z-index: -1;
+            background-image: url(../img/rainy.jpg);
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(18px);
+            -webkit-filter: blur(20px);
+        }
+        
+    }
+
+    &__detail--day {
+
+        position: absolute;
+        top: 140%;
+        left: 56%;
+        right: 0%;
+        // bottom: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 35px;
+        // height: 100%;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // background-color: rgba(255,255,255,0.8);
+            z-index: -1;
+            
+
+            background-image: url(../img/rainy.jpg);
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            -webkit-filter: blur(20px);
+            -moz-filter: blur(20px);
+            -ms-filter: blur(20px);
+            -o-filter: blur(20px);
+            filter: blur(30px);
+            // margin: -80px 0px;
+        }
+
+    }
+
+    // &__detail--thirdDay{
+    //     position: absolute;
+    //     top: 135%;
+    // }
+
+    // &__detail--forthDay{
+    //     position: absolute;
+    //     top: 145%;
+    // }
+
+    // &__detail--fifthDay{
+    //     position: absolute;
+    //     top: 155%;
+    // }
+
+    // &__detail--sixthDay{
+    //     position: absolute;
+    //     top: 165%;
+    // }
+
+    // &__detail--seventhDay{
+    //     position: absolute;
+    //     top: 175%;
+    // }
+
+    &__item {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        // background-color: black;
+        margin: 10px;
+        padding: 5px;
+
+        // height: 80px;
+        // width: 250px;
+        // padding-top: 5px;
+        flex: 0 20%;
+        // flex-grow: 1;
+    }
+    &__item--day{
+        flex-grow: 1;
+    }
+    &__item--icon{
+        width: 70px;
+        // flex-grow: 1;
+        width: 40px;
+        height: 40px;
+    }
+    &__item--tep{
+        width: 70px
+    }
+
+}
+
+#today--tep{
+    
+    font-size: 100px;
+    color: white;
+    margin: 5px;
+    line-height: 140px;
+    
+}
+
+#weatherPage__today--detail{
+    font-size: 60px;
+    color: white;
+    // margin: 5px;
+}
+
+
+#weatherPage__today--time{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 300px;
+    // background-color: black;
+}
+
+
+.weatherPage__item span {
+    // margin: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.degree {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 75%;
+    top:8%
+}
+
